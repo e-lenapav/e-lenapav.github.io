@@ -4,31 +4,43 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>My Personal Page</title>
     <meta name="description" content="My personal page">
     <meta name="author" content="SecretLeague">
     <link rel="stylesheet" href="./styles.css?v=1.0">
+    <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <header>
-      <h1>Привет. Мой сайт обо мне</h1>
+    <header class="header">
+      <div class="header__image">
+        <img src="./photo_2021-12-08_16-16-51.jpg">
+      </div>
+        <div class="header__name"><h1>Лена Павлова</h1>
+      </div>
+    <nav class="header__nav nav">
+      <ul class = "nav__menu menu">
+        <li class="menu__item"><a href = "#">Обо мне</a></li>
+        <li class="menu__item"><a href = "#">Контакты</a></li>
+     </ul>
+  </nav>
     </header>
-    <img src="./photo_2021-12-08_16-16-51.jpg">
+    
     <h2>Привет! Меня зовут Лена!</h2>
-    <p></p>Могу рассказать немного о себе:)
+    <article>
+      <p>Могу рассказать немного о себе:)
     Мне 28 лет.
     Я работаю рекрутером - устраиваю разработчиков на работу.</p>
-    <p>ПОчему я решила уйти в IT разработку
+      <section class="list_why">Почему я решила уйти в IT разработку:
         <ul>
           <li>Некое развитие и нужны нагрузки на мозг</li>
           <li>Меньше общения с людьми</li>
           <li>Задолбалась заманивать разрабов с ЧСВ</li>
         </ul>
-    </p>
-    <p>Познакомиться с моей компание можно <a src="https://hoodies.team">тут</a> 
-    </p>
-    <table>
+      </section>
+  </article>
+    <div>Познакомиться с моей компание можно <a src="https://hoodies.team">тут</a> 
+    </div>
+    <table class="table__about">
       <caption> А это таблица ни о чем</caption>
       <tr>
         <th>Название столбца</th>
@@ -47,11 +59,14 @@
         <td>999</td>
       </tr>
     </table>
-    <div>А вообще помимо этого у меня есть ремонт. Пытаюсь его закончить..но это наверное бесконечно))</div>
-    <section>Посмотрим что будет тут</section>
-    <section>А что будет тут</section>
-    <article>БЛа бла</article>
     
-    <footer>Спасибо за просмотр</footer>
+    <footer>
+      <div class="footer__icons">
+        <a src="https://www.linkedin.com/in/lena-pavlova-5a639716b/"><img src="./Иконка in.png"></a>
+        <a src="https://github.com/e-lenapav"><img src="./Иконка github.png"></a>  
+        <a src="https://vk.com/id61337566"><img src="./Иконка VK.png"></a>
+        <a src="https://t.me › elenpavlova"><img src="./Иконка tg.png"></a>    
+    </div>
+    </footer>
   </body>
 </html>
